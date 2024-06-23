@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>This is about me page!</h1>
+<div th:replace="~{base :: parent(~{::section})}">
+    <section>
+        <h2>This is dynamic content</h2>
+    </section>
+</div>
+</body>
+</html>
